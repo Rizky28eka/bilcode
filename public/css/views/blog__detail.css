@@ -1,0 +1,81 @@
+/*=============== WORK DETAIL PAGE ===============*/
+.blog__detail-time{
+    padding-right: 15%;
+    padding-left: 15%;
+    padding-top: 10rem;
+    font-size: var(--small-font-size);
+    letter-spacing: 1px;
+    color: var(--title-color);
+    font-weight: 300;
+    font-family: graphit-regular;
+    margin-bottom: 2rem;
+}
+
+.blog__detail-title{
+    padding-right: 15%;
+    padding-left: 15%;
+    font-size: var(--biggest-font-size);
+    letter-spacing: 1px;
+    font-family: Graphit-Medium;
+    color: var(--title-color);
+    font-weight: 500;
+    margin: 2.5rem 0;
+}
+
+.blog__detail-category {
+    padding: 0 15%;
+    color: var(--second-color);
+    font-size: var(--normal-font-size);
+}
+
+.developer {
+    padding: 0 15%;
+    display: flex;
+    margin-top: 2rem;
+}
+
+.developer__profile {
+    display: flex;
+    margin-right: 2rem;
+}
+
+.developer__profile-img {
+    width: 40px;
+    height: 40px;
+    margin-right: .7rem;
+    border-radius: 50%;
+}
+
+.developer__profile-name {
+    font-family: Graphit-Medium;
+    font-weight: 500;
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+}
+
+.developer__profile-role {
+    font-family: graphik-regular;
+    font-size: var(--smaller-font-size);
+    color: var(--text-color);
+}
+
+.blog__detail-img {
+    margin-top: 6rem;
+    position: relative;
+    width: 100%;
+}
+
+.blog__detail-body {
+    margin-top: 4rem;
+    padding: 0 15%;
+    font-family: graphik-light;
+    color: var(--title-color);
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.credit {
+    margin-top: 4rem;
+    padding: 2rem 15%;
+    background: var(--title-color);
+}

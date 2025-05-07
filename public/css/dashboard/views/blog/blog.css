@@ -1,0 +1,120 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    /* box-shadow: 0 5px 10px #e1e5ee; */
+    /* background-color: white; */
+    text-align: left;
+    overflow: hidden;
+}
+
+thead {
+    box-shadow: 0 5px 10px #e1e5ee;
+    background: var( --color-brown);
+}
+
+th {
+    padding: 1rem 2rem;
+    font-size: 14px;
+    font-weight: 600;
+    color: #FFF;
+    text-align: center;
+}
+
+td{
+    padding: 1rem 2rem;
+    text-align: center;
+    align-items: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f4f6fb;
+}
+
+.status {
+    border-radius: .2rem;
+    background-color: red;
+    padding: 0.2rem 1rem;
+    text-align: center;
+}
+
+.amount {
+    text-align: right;
+}
+
+.table__img {
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    background-position: center;
+}
+
+.table__title {
+    max-width: 220px;
+}
+
+.table__author {
+    max-width: 100px;
+}
+
+.table__action i{
+    font-size: 16px;
+}
+
+.table__preview{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    font-size: 12px;
+    font-weight: 600;
+    background: #473cc44f;
+    color: var(--color-purple);
+    padding: .5rem .9rem;
+    border-radius: var(--border-radius-1);
+    margin-bottom: .5rem;
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+.table__preview:hover{
+    background: var(--color-purple);
+    color: #FFF;
+}
+
+.table__edit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    font-size: 12px;
+    font-weight: 600;
+    background: #b9c43c4f;
+    color: #b9c43c;
+    padding: .5rem .9rem;
+    border-radius: var(--border-radius-1);
+    margin-bottom: .5rem;
+    transition: all 300ms ease;
+}
+.table__edit:hover{
+    background: #b9c43c;
+    color: #fff;
+}
+
+.table__delete{
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    font-size: 12px;
+    font-weight: 600;
+    background: #c43c3c4f;
+    color: #c43c3c;
+    padding: .5rem .9rem;
+    border-radius: var(--border-radius-1);
+    transition: all 300ms ease;
+}
+.table__delete:hover{
+    background: #c43c3c;
+    color: #FFF;
+}

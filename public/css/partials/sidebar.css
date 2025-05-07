@@ -1,0 +1,51 @@
+.sidebar{
+    position: fixed;
+    left: 0;
+    bottom: 2.5rem;
+    transition: .4s;
+    z-index: 2;
+}
+
+.side__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: .6rem;
+}
+
+.side__link i {
+    background: var(--title-color);
+    color: var(--body-color);
+    font-size: var(--normal-font-size);
+    padding: .4rem;
+    border-radius: 50%;
+}
+
+.side__link:hover i {
+    background: var(--second-color);
+    color: #fff;
+    transition: .4s ease-in-out;
+}
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 760px) {
+    .sidebar{
+        display: none;
+    }
+}
+  
+/* For medium devices */
+@media screen and (min-width: 576px) {
+
+}
+  
+@media screen and (min-width: 767px) {
+
+}
+
+/* For large devices */
+@media screen and (min-width: 968px) {
+
+}

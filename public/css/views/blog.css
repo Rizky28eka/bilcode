@@ -1,0 +1,164 @@
+/*=============== WORK PAGE ===============*/
+.blog__page-title{
+    padding-top: 10rem;
+    font-size: var(--biggest-font-size);
+    letter-spacing: 1px;
+    font-family: Graphit-Medium;
+    color: var(--title-color);
+    font-weight: 500;
+    margin: 0 .4rem;
+}
+
+.blog__page-title > div{
+    position: relative;
+    display: inline-block;
+    visibility: visible;
+}
+
+.blog__page__container{
+    display: flex;
+    gap: 1.5rem;
+    margin: 5rem 0;
+}
+
+.blog__page__filters{
+    font-size: var(--normal-font-size);
+    font-family: graphik-regular;
+    color: var(--text-color);
+    transition: .5s ease-in-out;
+    position: relative;
+}
+
+.blog__page__filters::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(0%, -50%);
+    display: block;
+    width: 0%;
+    height: 6px;
+    background-color: var(--second-color-alt);
+    /* transition: width .3s; */
+    animation: center-line-2 .5s ease-out;
+}
+
+.blog__page__filters:hover::after {
+    width: 100%;
+    /* transition: width .3s; */
+    animation: center-line-1 .5s ease-out;
+}
+
+.blog__page__filters:hover {
+    color: var(--title-color);
+    transition: .1s ease-out;
+}
+
+.blog__page__body{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.image {
+    position: relative;
+}
+
+.image__img {
+    display: block;
+    object-fit: cover;
+    height: 350px;
+    width: 100%;
+}
+
+.image__overlay {
+    padding: 2.5rem;
+    position: absolute;
+    bottom: 0;
+}
+
+.image__category {
+    font-size: var(--small-font-size);
+    color: #fff;
+    margin-bottom: 0.5em;
+}
+
+.image__title {
+    font-size: var(--h2-font-size);
+    font-family: graphik-semi-bold;
+    color: #fff;
+    position: relative;
+}
+
+.image:hover .image__title {
+    color: var(--second-color);
+}
+
+/* .image__title::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(0%, -50%);
+    display: block;
+    width: 0%;
+    height: 4px;
+    background-color: #FFF;
+    animation: center-line-2 .5s ease-out;
+}
+
+.image:hover .image__title::after {
+    width: 100%;
+    animation: center-line-1 .5s ease-out;
+} */
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 760px) {
+    /*=============== WORK PAGE ===============*/
+    .blog__page-title{
+        padding-top: 2rem;
+    }
+
+    .blog__page__body{
+        display: block;
+    }
+
+    .image__img {
+        height: auto;
+    }
+
+    .image__overlay {
+        padding: 1.5rem;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .image__category {
+        font-size: var(--normal-font-size);
+        color: #fff;
+        margin-bottom: 0.5em;
+    }
+
+    .image__title {
+        font-size: var(--h1-font-size);
+
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}
+
+/* For medium devices */
+@media screen and (min-width: 576px) {
+
+}
+
+@media screen and (min-width: 767px) {
+}
+
+/* For large devices */
+@media screen and (min-width: 968px) {
+
+}

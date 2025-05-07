@@ -1,0 +1,50 @@
+/*=============== WORK PAGE ===============*/
+
+.work__page__list{
+    padding-top: 25vh;
+}
+
+.work__page__body-title{
+    margin-bottom: 2rem;
+    font-family: graphik-medium;
+}
+
+.work__page__body-desc{
+    width: 60%;
+    font-size: var(--normal-font-size);
+    font-family: graphik-regular;
+    color: var(--title-color);
+    margin-bottom: 10rem;
+}
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 760px) {
+
+    .work__page__body-desc{
+        width: 100%;
+        font-size: var(--h3-font-size);
+        font-family: graphik-regular;
+        color: var(--title-color);
+        font-weight: 500;
+        margin-bottom: 5rem;
+    }
+
+}
+  
+/* For medium devices */
+@media screen and (min-width: 576px) {
+
+}
+  
+@media screen and (min-width: 767px) {
+    .work__page-title{
+        font-size: 60px;
+    }
+}
+
+/* For large devices */
+@media screen and (min-width: 968px) {
+
+}
